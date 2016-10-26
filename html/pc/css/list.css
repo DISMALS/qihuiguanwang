@@ -1,0 +1,1247 @@
+﻿@charset "UTF-8";
+/*
+    *制作日期：2016.09.10
+    *用途：内页栏目相关样式,走进企汇、公司业务、新闻媒体、招聘岗位、投资者关系
+    *作者：王勇
+*/
+/*走进企汇样式开始*/
+.aboutUs{
+    width:89%;
+    height:auto;
+    position:relative;
+    padding-left:11%;
+    z-index:23;
+}
+.aboutUsTit{
+    width:84%;
+    height:80px;
+    padding-left:3%;
+    margin-bottom:2em;
+    float:left;
+}
+@media (max-width:1440px){
+    .aboutUsTit{
+        width:81%;
+    }
+}
+.aboutUsTit li{
+    width:14.2%;
+    height:80px;
+    float:left;
+    line-height:120px;
+    text-align:center;
+    font-size:0.85em;
+    color:#999;
+    overflow:hidden;
+}
+.aboutUsTit li a{
+    display:block;
+    color:#555;
+}
+.aboutUsTit li a:hover{
+    color:#000;
+}
+.aboutUsTit li.on a{
+    color:#000;
+}
+.aboutUsListM{
+    width:80%;
+    height:auto;
+    position:relative;
+}
+/*公司概况*/
+.aboutUsList{
+    width:100%;
+    height:auto;
+    position:relative;
+    top:0;
+    left:0;
+    /*margin-left:7%;*/
+}
+@media (max-width:1599px){
+    .aboutUsListM{
+        width:85%;
+        height:auto;
+        position:relative;
+    }
+    .aboutUsList{
+        width:100%;
+        height:auto;
+        position:relative;
+        top:0;
+        left:0;
+        /*margin-left:7%;*/
+    }
+    
+}
+.aulistOnePic{
+    display:block;
+    float:left;
+    margin-right:3%;
+    width:46%;
+    height:auto;
+    max-width:418px;
+}
+.auListOneText{
+    font-size:0.7em;
+    color:#666;
+    line-height:2.4em;
+    text-indent:1.8em;
+}
+/*公司荣誉*/
+.ryList{
+    width:100%;
+    height:auto;
+    overflow:hidden;
+}
+.ryList li{
+    float:left;
+    margin:10px 1%;
+    width:23%;
+    height:auto;
+}
+.ryList li img{
+    display:block;
+    width:100%;
+    height:auto;
+    max-width:278px;
+    max-height:190px;
+    margin:0px auto;
+}
+.pageOne{
+    width:80%;
+    height:30px;
+    line-height:30px;
+    font-size:14px;
+    padding:0px 10%;
+    margin-top:15px;
+    text-align:center;
+    display:inline-block;
+}
+@media (max-width:1599px){
+    .pageOne{
+        margin-top:6px;
+    }
+}
+.pageOne a{
+    color:#333;
+    margin-right:30px;
+    display:inline-block;
+}
+.pageOne a:hover{
+    color:#666;
+}
+/*员工风采*/
+.fcList{
+    width:100%;
+    height:auto;
+}
+.fcList li{
+    width:23%;
+    float:left;
+    margin:10px 1%;
+    position:relative;
+}
+.fcShadow{
+    animation:fcShadow 0.3s ease both;
+    -webkit-animation:fcShadow 0.3s ease both;
+    -moz-animation:fcShadow 0.3s ease both;
+}
+.fcShadows{
+    animation:fcShadows 0.3s ease both;
+    -webkit-animation:fcShadows 0.3s ease both;
+    -moz-animation:fcShadows 0.3s ease both;
+}
+@keyframes fcShadow{
+    0%{
+        transform:scale(1);
+        box-shadow:0px 0px 0px rgba(0,0,0,0);
+    }
+    100%{
+        transform:scale(1.1);
+        box-shadow:0px 8px 12px rgba(0,0,0,0.4);
+    }
+}
+@-webkit-keyframes fcShadow{
+    0%{
+        transform:scale(1);
+        box-shadow:0px 0px 0px rgba(0,0,0,0);
+    }
+    100%{
+        transform:scale(1.1);
+        box-shadow:0px 8px 12px rgba(0,0,0,0.4);
+    }
+}
+@-moz-keyframes fcShadow{
+    0%{
+        transform:scale(1);
+        box-shadow:0px 0px 0px rgba(0,0,0,0);
+    }
+    100%{
+        transform:scale(1.1);
+        box-shadow:0px 8px 12px rgba(0,0,0,0.4);
+    }
+}
+@keyframes fcShadows{
+    0%{
+        transform:scale(1.1);
+        box-shadow:0px 8px 12px rgba(0,0,0,0.4);
+    }
+    100%{
+        transform:scale(1);
+        box-shadow:0px 0px 0px rgba(0,0,0,0);
+    }
+}
+@-webkit-keyframes fcShadows{
+    0%{
+        transform:scale(1.1);
+        box-shadow:0px 8px 12px rgba(0,0,0,0.4);
+    }
+    100%{
+        transform:scale(1);
+        box-shadow:0px 0px 0px rgba(0,0,0,0);
+    }
+}
+@-moz-keyframes fcShadows{
+    0%{
+        transform:scale(1.1);
+        box-shadow:0px 8px 12px rgba(0,0,0,0.4);
+    }
+    100%{
+        transform:scale(1);
+        box-shadow:0px 0px 0px rgba(0,0,0,0);
+    }
+}
+.fcList li a{
+    display:block;
+}
+.fcPic{
+    display:block;
+    width:100%;
+    max-width:278px;
+    max-height:190px;
+    margin:0px auto;
+}
+.fcTit{
+    display:none;
+    width:100%;
+    height:33px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    line-height:33px;
+    text-align:center;
+    font-size:12px;
+    color:#fff;
+    background:rgba(0,0,0,0.7);
+}
+.popBot{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:888;
+    background:rgba(0,0,0,0.8);
+}
+.popMain{
+    width:633px;
+    height:465px;
+    position:absolute;
+    z-index:889;
+    padding:20px; 
+    display:none;
+    background:#fff;
+}
+.popClose{
+    display:block;
+    width:17px;
+    height:17px;
+    background:url(../images/investor/popClose.png) no-repeat center;
+    position:absolute;
+    top:20px;
+    right:20px;
+}
+.popMain p{
+    display:block;
+    height:24px;
+    line-height:24px;
+    text-align:center;
+    font-size:16px;
+    color:#333;
+    margin-bottom:16px;
+}
+.popMain img{
+    width:633px;
+    height:422px;
+    display:block;
+    margin:0px auto;
+}
+/*公司视频*/
+.companyVideo{
+    width:100%;
+    height:auto;
+}
+#CuPlayer{
+    width:100%;
+    height:auto;
+}
+/*客户展示*/
+.khShowTit{
+    width:93%;
+    height:3px;
+    margin:1em 0em 0em 7%;
+    text-align:center;
+}
+.khShowTit a{
+    width:55px;
+    height:3px;
+    display:inline-block;
+    background:#999999;
+    margin:0px 10px;
+}
+.khShowTit a.on{
+    background:#7544ff;
+}
+.khShowTit li a{
+    display:block;
+}
+.khShowList{
+    width:100%;
+    height:auto;
+}
+.khShowListM{
+    width:100%;
+    height:auto;
+    padding:10px;
+    overflow:hidden;
+    position:relative;
+}
+.khShowListM li{
+    float:left;
+    width:24%;
+    max-height:150px;
+    margin:5px 0.5%;
+    position:relative;
+    cursor:pointer;
+    padding:2em 0em;
+}
+.khShowListM li img{
+    display:block;
+    width:100%;
+    height:auto;
+    max-width:170px;
+    max-height:70px;
+    margin:0px auto;
+}
+/*客户展示鼠标滑过动画*/
+@keyframes khAnimate{
+    0%{
+        top:0px;
+        box-shadow:0px 0px 0px rgba(0,0,0,0);
+        background:rgba(255,255,255,0);
+    }
+    100%{
+        top:-5px;
+        box-shadow:0px 1px 8px rgba(0,0,0,0.15);
+        background:rgba(255,255,255,1);
+    }
+}
+@-webkit-keyframes khAnimate{
+    0%{
+        top:0px;
+        box-shadow:0px 0px 0px rgba(0,0,0,0);
+        background:rgba(255,255,255,0);
+    }
+    100%{
+        top:-5px;
+        box-shadow:0px 1px 8px rgba(0,0,0,0.15);
+        background:rgba(255,255,255,1);
+    }
+}
+.khAnimate{
+    animation:khAnimate 1s ease both;
+    -webkit-animation:khAnimate 1s ease both;
+}
+@keyframes khAnimates{
+    0%{
+        top:-5px;
+        box-shadow:0px 1px 8px rgba(0,0,0,0.15);
+        background:rgba(255,255,255,1);
+    }
+    100%{
+        top:0px;
+        box-shadow:0px 0px 0px rgba(0,0,0,0);
+        background:rgba(255,255,255,0);
+    }
+}
+@-webkit-keyframes khAnimates{
+    0%{
+        top:-5px;
+        box-shadow:0px 1px 8px rgba(0,0,0,0.15);
+        background:rgba(255,255,255,1);
+    }
+    100%{
+        top:0px;
+        box-shadow:0px 0px 0px rgba(0,0,0,0);
+        background:rgba(255,255,255,0);
+    }
+}
+.khAnimates{
+    animation:khAnimates 1s ease both;
+    -webkit-animation:khAnimates 1s ease both;
+}
+/*历史进程*/
+/*.timeTit{
+    width:100%;
+    height:auto;
+    margin:0px auto;
+    overflow:hidden;
+    position:relative;
+    padding:0px 0px 50px;
+}
+.timeList{
+    position:relative;
+    top:0;
+    left:0;
+    height:auto;
+    zoom:1;
+}
+.timeList li{
+    width:185px;
+    height:auto;
+    float:left;
+}
+p.timeTitC{
+    width:100%;
+    height:100px;
+    line-height:110px;
+    text-align:center;
+    font-size:24px;
+    font-family:Arial;
+    color:#999;
+    cursor:pointer;
+    background:url(../images/about/lcYdNor.png) no-repeat center bottom;
+}
+p.focs{
+    color:#333;
+    background:url(../images/about/lcYdOn.png) no-repeat center bottom;
+}
+.timeContent{
+    position:relative;
+    padding:20px;
+    top:30px;
+    left:0px;
+    width:302px;
+    border:1px solid #4e4e4e;
+    background:#fff;
+}
+.topSJ{
+    width:18px;
+    height:11px;
+    background:url(../images/about/topJT.png) no-repeat center;
+    position:absolute;
+    top:-11px;
+    left:81px;
+}
+.timeContentList{
+    width:302px;
+    height:auto;
+    overflow:hidden;
+    position:relative;
+}
+.timeText{
+    width:302px;
+    min-height:35px;
+    line-height:22px;
+    float:left;
+    color:#333;
+    font-size:14px;
+    background:url(../images/about/timeCont.png) repeat-y 75px top;
+    overflow:hidden;
+    padding:3px 0px;
+    display:none;
+}
+.times{
+    float:left;
+    width:65px;
+    text-align:right;
+    font-weight:bold;
+}
+.timeText p{
+    float:right;
+    width:210px;
+    padding-left:8px;
+}
+.prevTime{
+    width:60px;
+    height:60px;
+    position:absolute;
+    left:-80px;
+    top:60px;
+    background:#f0f0f0;
+}
+.nextTime{
+    width:60px;
+    height:60px;
+    position:absolute;
+    right:-80px;
+    top:60px;
+    background:#f0f0f0;
+}
+.nextTime img,.prevTime img{
+    display:block;
+    margin:15px auto;
+}*/
+.resetLTimeT{
+    width:85%;
+    height:110px;
+    position:relative;
+    padding:0px 3%;
+    z-index:6;
+    margin:0px auto;
+}
+.resetLTimeTit{
+    width:100%;
+    height:110px;
+    position:relative;
+    overflow:hidden;
+}
+.resetLTimeTitM{
+    height:130px;
+    position:absolute;
+    z-index:6;
+}
+.resetLTimeTitM li{
+    float:left;
+    width:160px;
+    height:110px;
+    line-height:72px;
+    font-size:1.2em;
+    font-family:Arial;
+    position:relative;
+    z-index:6;
+}
+.resetLTimeTitM li a{
+    display:block;
+    width:100%;
+    height:110px;
+    color:#999;
+    text-align:center;
+    background:url(../images/about/lcYdNor.png) no-repeat center 60px;
+    position:relative;
+    z-index:6;
+}
+.resetLTimeTitM li a.clickOn{
+    color:#000;
+    background:url(../images/about/lcYdOn.png) no-repeat center 60px;
+}
+.resetLTimeTitM li a.clickOn .resetJT{
+    position:absolute;
+    display:block;
+    width:18px;
+    height:11px;
+    background:url(../images/about/topJT.png) no-repeat center;
+    bottom:0px;
+    z-index:6;
+}
+.prevTime{
+    display:block;
+    width:16px;
+    height:31px;
+    position:absolute;
+    left:0px;
+    top:55.5px;
+}
+.nextTime{
+    display:block;
+    width:16px;
+    height:31px;
+    position:absolute;
+    right:0px;
+    top:55.5px;
+}
+.prevTime img,.nextTime img{
+    display:block;
+    width:16px;
+    height:31px;
+}
+
+
+.resetRTimeContent{
+    width:100%;
+    height:200px;
+    overflow:hidden;
+    padding:30px 20px;
+    border:1px solid #333333;
+    position:relative;
+    z-index:3;
+    margin:-1px auto 0px;
+}
+.resetTimeCm{
+    display:none;
+}
+.resetTimeCm li{
+    min-height:35px;
+    line-height:22px;
+    color:#333;
+    font-size:14px;
+    background:url(../images/about/timeCont.png) repeat-y 12% top;
+    overflow:hidden;
+    padding:3px 0px;
+}
+.times{
+    float:left;
+    width:10%;
+    text-align:right;
+    font-weight:bold;
+}
+.resetTimeCm li p{
+    float:right;
+    width:80%;
+    padding-left:3%;
+    padding-right:5%;
+}
+
+@media (max-width:1599px){
+.aboutUsTit{
+    padding-left:5%;
+    margin-bottom:1.5em;
+}
+.aboutUsTit li{
+    width:12%;
+    height:80px;
+    float:left;
+    line-height:120px;
+    text-align:center;
+    font-size:0.7em;
+    color:#999;
+    overflow:hidden;
+}
+.auListOneText{
+    line-height:1.8em;
+}
+}
+/*走进企汇样式结束*/
+
+/*公司业务样式开始*/
+.businessTit{
+    width:75%;
+    height:80px;
+    float:left;
+    padding-left:3%;
+    margin-bottom:2em;
+}
+.businessTit li{
+    padding:0em 2%;
+    height:80px;
+    float:left;
+    line-height:120px;
+    text-align:center;
+    font-size:0.7em;
+    color:#999;
+    overflow:hidden;
+}
+.businessTit li a{
+    display:block;
+    color:#999;
+}
+.businessTit li a:hover{
+    color:#333;
+}
+.businessTit li.on a{
+    color:#333;
+}
+.businessM{
+    width:75%;
+    height:auto;
+    position:relative;
+}
+.business{
+    width:100%;
+    height:auto;
+    overflow:hidden;
+}
+.busiMain{
+    width:40%;
+    height:auto;
+    float:left;
+}
+.busiOneP{
+    margin-right:2%;
+}
+.busiOneP img{
+    display:block;
+    width:100%;
+    margin:0px auto;
+    max-width:409px;
+}
+.busiTwoP{
+    margin-right:2%;
+}
+.busiTwoP img{
+    display:block;
+    width:100%;
+    margin:0px auto;
+    max-width:383px;
+}
+.busiThreeP{
+    margin-right:2%;
+}
+.busiThreeP img{
+    display:block;
+    width:100%;
+    margin:0px auto;
+    max-width:409px;
+}
+.busiFourP{
+    margin-right:2%;
+}
+.busiFourP img{
+    display:block;
+    width:100%;
+    margin:0px auto;
+    max-width:400px;
+}
+.business p{
+    font-size:0.7em;
+    color:#666;
+    line-height:2em;
+}
+@media (max-width:1599px){
+.businessM{
+    width:80%;
+}
+.busiMain{
+    width:35%;
+}
+.businessTit{
+    width:75%;
+    height:80px;
+    padding-left:5%;
+    margin-bottom:1.5em;
+}
+}
+/*公司业务样式结束*/
+
+/*新闻媒体样式开始*/
+.newsTit{
+    width:75%;
+    height:80px;
+    float:left;
+    margin-bottom:2em;
+}
+@media (max-width:1600px){
+    .newsTit{
+        padding-left:3%;
+    }
+}
+@media (max-width:1400px){
+    .newsTit{
+        margin-bottom:1em;
+    }
+}
+.newsTit li{
+    padding:0em 2%;
+    height:80px;
+    float:left;
+    line-height:120px;
+    text-align:center;
+    font-size:0.7em;
+    color:#999;
+    overflow:hidden;
+}
+.newsTit li a{
+    display:block;
+    color:#555;
+}
+.newsTit li a:hover{
+    color:#000;
+}
+.newsTit li.on a{
+    color:#000;
+}
+
+
+.newList{
+    width:80%;
+    height:auto;
+    position:relative;
+}
+.newsMain{
+    width:90%;
+    height:auto;
+    margin:0px auto;
+    overflow:hidden;
+    position:relative;
+}
+.newsMain ul{
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    position:relative;
+}
+.newsMain li{
+    width:33.3%;
+    height:auto;
+    float:left;
+}
+.newsMain li a{
+    width:93%;
+    margin:0px auto;
+    display:block;
+    background:#fff;
+}
+.listSpan{
+    display:block;
+    width:100%;
+    margin:0em auto;
+    overflow:hidden;
+}
+.newsMain li img{
+    width:100%;
+    height:auto;
+    display:block;
+    max-width:397px;
+}
+.textMain{
+    border:1px solid #E8E8E8;
+    border-top:none;
+    padding:1em 5% 1em;
+    position:relative;
+}
+.newsMain li:hover .textMain{
+    background:#F9F9F9;
+}
+.newListTit{
+    display:block;
+    height:1.6em;
+    line-height:1.6em;
+    font-size:0.8em;
+    color:#333;
+    text-align:center;
+    margin:0em 0em 0.3em 0em;
+    overflow:hidden;
+}
+.newListDes{
+    font-size:0.6em;
+    height:3.6em;
+    line-height:1.8em;
+    overflow:hidden;
+    color:#999;
+}
+.jtNewsTime{
+    font-size:0.6em;
+    color:#999;
+    font-style:normal;
+}
+.newsMain li a:hover .newListTit{
+    color:#000;
+}
+.newsMain li a:hover .newListDes{
+    color:#666;
+}
+.prevBtn{
+    width:41px;
+    height:41px;
+    display:block;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.nextBtn{
+    width:41px;
+    height:41px;
+    display:block;
+    position:absolute;
+    right:0;
+    top:0;
+}
+.prevBtn img,.nextBtn{
+    display:block;
+    width:22px;
+    height:41px;
+    margin:0px auto;
+}
+/*新闻媒体样式结束*/
+
+/*新闻详情样式开始*/
+.newsCommon{
+    width:56%;
+    height:auto;
+    margin:0px auto;
+    position:relative;
+    overflow:hidden;
+    z-index:3;
+}
+.commonMain{
+    width:100%;
+    height:auto;
+    position:relative;
+    overflow:hidden;
+}
+.comTit{
+    display:block;
+    padding-bottom:1.5em;
+    position:relative;
+}
+.comTit h2{
+    width:80%;
+    font-size:1.25em;
+    color:#333;
+    line-height:1.5em;
+}
+.comTit em{
+    color:#999;
+    font-size:0.6em;
+    line-height:2em;
+    font-style:normal;
+    padding-left:3%;
+}
+.comBack{
+    display:block;
+    height:15px;
+    line-height:15px;
+    padding-left:23px;
+    position:absolute;
+    top:0.5em;
+    right:2em;
+    font-size:0.7em;
+    color:#333;
+    background:url(../images/news/newBack.png) no-repeat left center;
+}
+.comText{
+    width:88%;
+    height:auto;
+    padding:0em 10% 0em 2%;
+}
+.comText p{
+    font-size:0.7em;
+    color:#333;
+    line-height:2em;
+    margin-bottom:1em;
+}
+.comText img{
+    display:block;
+    margin:0.5em auto;
+    height:auto;
+}
+.slimScrollBar{
+    cursor:pointer;
+}
+/*新闻详情样式结束*/
+
+/*招聘岗位样式开始*/
+.recruit{
+    width:80%;
+    height:auto;
+    margin:0px auto;
+    position:relative;
+    overflow:hidden;
+    z-index:3;
+    padding-bottom:1em;
+}
+.recruitTit{
+    width:20%;
+    display:block;
+    float:left;
+    max-width:193px;
+}
+.recruitMain{
+    width:75%;
+    height:auto;
+    float:right;
+}
+.recruitMM{
+    width:75%;
+    height:auto;
+    float:right;
+}
+.recruitMains{
+    width:100%;
+    height:auto;
+}
+.recruitMain a{
+    display:block;
+    width:21%;
+    float:left;
+    padding:0px 2%;
+}
+.recruitMain a img{
+    display:block;
+    width:100%;
+    height:auto;
+    max-width:240px;
+    margin:0px auto;
+}
+.recruitList{
+    width:85%;
+    height:auto;
+    background:#fff;
+    border:1px solid #F3F3F3;
+    padding:0.8em 2%;
+}
+.recruitList li{
+    width:97%;
+    height:2em;
+    line-height:2em;
+    border-bottom:1px solid #f3f3f3;
+    padding:0em 3% 0em 0em;
+}
+
+.recruitList li a{
+    width:100%;
+    height:2em;
+    display:block;
+    font-size:0.8em;
+    color:#333;
+}
+.recruitList li a:hover{
+    color:#000;
+}
+
+.recruitTime{
+    font-size:0.7em;
+    color:#666;
+    float:right;
+    font-style:normal;
+}
+.recruitList li a:hover .recruitTime{
+    color:#333;
+}
+.recruitBack{
+    display:block;
+    height:15px;
+    line-height:15px;
+    padding-left:23px;
+    position:absolute;
+    top:2em;
+    right:2em;
+    font-size:0.7em;
+    color:#333;
+    background:url(../images/news/newBack.png) no-repeat left center;
+}
+.recruitBacks{
+    display:block;
+    height:15px;
+    line-height:15px;
+    padding-left:23px;
+    font-size:0.7em;
+    color:#333;
+    position:absolute;
+    right:0;
+    background:url(../images/news/fanhui.png) no-repeat left center;
+}
+.recruitComTit{
+    font-size:0.9em;
+    color:#333;
+    padding-top:3em;
+    padding-bottom:1em;
+}
+.recruitMainCom{
+    width:65%;
+    height:auto;
+    float:left;
+    position:relative;
+    background:#fff;
+    padding:0em 1% 15px 6%; 
+    margin-left:3%;
+    border:1px solid #f3f3f3;
+    overflow:hidden;
+}
+.recruitMains{
+    width:98%;
+    height:auto;
+}
+.recruitMains .comText{
+    padding:0em 2% 0em 0%;
+}
+.slimScrollBar{
+    width:3px !important;
+}
+.slimScrollRail{
+    width:3px !important;
+    height:100% !important;
+}
+/*招聘岗位样式结束*/
+
+/*投资者关系样式开始*/
+.investor{
+    width:80%;
+    height:auto;
+    margin:0px auto;
+    position:relative;
+    overflow:hidden;
+    z-index:3;
+    padding-bottom:1em;
+}
+.investorTit{
+    width:75%;
+    height:80px;
+    float:left;
+    padding-left:5%;
+    margin-bottom:1.5em;
+}
+@media (max-width:1400px){
+    .investorTit{
+        margin-bottom:1em;
+    }
+}
+.investorTit li{
+    padding:0em 2%;
+    height:80px;
+    float:left;
+    line-height:120px;
+    text-align:center;
+    font-size:0.7em;
+    color:#999;
+    overflow:hidden;
+}
+.investorTit li a{
+    display:block;
+    color:#999;
+}
+.investorTit li a:hover{
+    color:#333;
+}
+.investorTit li.on a{
+    color:#333;
+}
+.investorM{
+    width:70%;
+    height:auto;
+    position:relative;
+}
+.ggList{
+    width:100%;
+    height:auto;
+}
+.ggList li{
+    padding:1em 1%;
+    border-bottom:1px solid #e7e7e7;
+}
+.ggList li a{
+    display:block;
+    overflow:hidden;
+}
+.ggTime{
+    display:block;
+    float:left;
+    width:6em;
+    height:6em;
+    margin-right:1.5em;
+    background:#EBEBEB;
+    text-align:center;
+    font-size:0.7em;
+    color:#000;
+}
+.ggTime b{
+    display:block;
+    line-height:2em;
+    font-size:2em;
+    color:#FF0033;
+    font-weight:lighter;
+}
+.ggListTit{
+    display:block;
+    font-size:1.25em;
+    color:#000;
+    font-weight:normal;
+    font-family:SimSun;
+    height:2.2em;
+    line-height:2.2em;
+    overflow:hidden;
+}
+.ggListDes{
+    font-size:0.65em;
+    color:#333;
+    height:1.2em;
+    line-height:1.2em;
+    overflow:hidden;
+}
+.ggList li a:hover .ggListTit{
+    color:#333;
+}
+.ggList li a:hover .ggListDes{
+    color:#666;
+}
+@media (max-width:1600px){
+    .investorTit{
+        width:75%;
+        padding-left:5%;
+    }
+    .investorM{
+        width:95%;
+        height:auto;
+        position:relative;
+    }
+}
+/*投资者关系样式结束*/
+
+.resetRTimeContent .slimScrollBar{
+    width:4px !important;
+    height:100px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

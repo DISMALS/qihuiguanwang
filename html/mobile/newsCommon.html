@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable = no" />
+    <!--禁止缩放-->
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <!--全屏显示-->
+    <meta content="telephone=no" name="format-detection" />
+    <!--告诉设备忽略将页面中的数字识别为电话号码-->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <title>新闻详情</title>
+    <link href="css/common.css" type="text/css" rel="stylesheet" />
+    <link href="css/list.css" type="text/css" rel="stylesheet" />
+    <link href="css/animate.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="js/tool.js"></script>
+    <script type="text/javascript" src="js/jquery.1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript">
+        
+    //设置根字号
+    function resizeB() {
+        var htmlB = document.getElementsByTagName("html")[0]; //获取html标签
+        var screenWidth = window.innerWidth || document.documentElement.clientWidth;  //获取屏幕宽度
+        var _fontSize = 20 * (screenWidth / 320)//获取根字号大小
+        if (screenWidth < 641) {
+            //把根字号大小给html
+            htmlB.style.fontSize = _fontSize + "px";
+        };
+    }
+    addDomLoaded(resizeB);
+    window.onresize = function () {
+        resizeB();
+    };
+    </script>
+</head>
+<body>
+<!--header start-->
+<!-- #include file="head.html" -->
+<!--header end-->
+
+<!--section start-->
+<section class="contents alone">
+    <!--人力资源-->
+    <h2 class="newsCommonTit">《郑州日报》两天头版点赞企汇网</h2>
+    <b class="sendTiem">发布时间：2016年07月16日 作者： 浏览：52</b>
+    <content class="newsCommonM">
+        <iframe src="http://192.168.80.165:8089/templates/qhwModel/js/pdfjs/web/viewer.html?file=/upload/201610/12/2015%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A%E6%91%98%E8%A6%81.pdf" width="100%" height="400px">
+        </iframe>
+        <iframe src="/templates/qhwModel/js/pdfjs/web/viewer.html?file=/upload/201610/12/2015年年度报告摘要.pdf" width="100%" height="400px">
+            &lt;/content&gt;
+            &lt;/section&gt;
+            &lt;!--section end--&gt;
+
+            &lt;!--footer start--&gt;
+            &lt;footer class="foot"&gt;&lt;/footer&gt;
+            &lt;!--footer end--&gt;
+            &lt;script type="text/javascript" src="/templates/qhwModel/js/jquery.1.11.1.min.js"&gt;&lt;/script&gt;
+            &lt;script type="text/javascript" src="/templates/qhwModel/js/base.js"&gt;&lt;/script&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+
+        </iframe>
+    </content>
+</section>
+<!--section end-->
+
+<!--footer start-->
+<footer class="foot"></footer>
+<!--footer end-->
+    
+</body>
+</html>

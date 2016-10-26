@@ -1,0 +1,247 @@
+﻿@charset "utf-8";
+/*
+    *制作时间：2016.09.08
+    *用途：企汇网官网改版首页动画
+    *作者：王勇
+*/
+
+/*第一屏动画效果*/
+@keyframes oneL{
+    0%{margin-left:-300px; opacity:0;}
+    100%{margin-left:0; opacity:1;}
+}
+@-webkit-keyframes oneL{
+    0%{margin-left:-300px; opacity:0;}
+    100%{margin-left:0; opacity:1;}
+}
+
+@keyframes oneR{
+    0%{margin-right:-300px; opacity:0;}
+    100%{margin-right:0; opacity:1;}
+}
+@-webkit-keyframes oneR{
+    0%{margin-right:-300px; opacity:0;}
+    100%{margin-right:0; opacity:1;}
+}
+
+@keyframes oneLs{
+    0%{margin-left:0; opacity:1;}
+    100%{margin-left:-300px; opacity:0;}
+}
+@-webkit-keyframes oneLs{
+    0%{margin-left:0; opacity:1;}
+    100%{margin-left:-300px; opacity:0;}
+}
+
+@keyframes oneRs{
+    0%{margin-right:0; opacity:1;}
+    100%{margin-right:-300px; opacity:0;}
+}
+@-webkit-keyframes oneRs{
+    0%{margin-right:0; opacity:1;}
+    100%{margin-right:-300px; opacity:0;}
+}
+
+/*第二屏左图动画*/
+@keyframes twoT{
+    0%{top:-300px; opacity:0;}
+    100%{top:0px; opacity:1;}
+}
+@-webkit-keyframes twoT{
+    0%{top:-300px; opacity:0;}
+    100%{top:0px; opacity:1;}
+}
+@keyframes twoB{
+    0%{transform:scale(5) translate3d(0px,500px,-500px); opacity:0;}
+    100%{transform:scale(1) translate3d(0px,0px,0px); opacity:1;}
+}
+@-webkit-keyframes twoB{
+    0%{transform:scale(5) translate3d(0px,500px,-500px); opacity:0;}
+    100%{transform:scale(1) translate3d(0px,0px,0px); opacity:1;}
+}
+
+@keyframes twoTs{
+    0%{transform:translate3d(0px,0px,0px); opacity:1;}
+    100%{transform:translate3d(-450px,-450px,0px); opacity:0;}
+}
+@-webkit-keyframes twoTs{
+    0%{transform:translate3d(0px,0px,0px); opacity:1;}
+    100%{transform:translate3d(-450px,-450px,0px); opacity:0;}
+}
+@keyframes twoBs{
+    0%{transform:translate3d(0px,0px,0px); opacity:1;}
+    100%{transform:translate3d(500px,500px,0px); opacity:0;}
+}
+@-webkit-keyframes twoBs{
+    0%{transform:translate3d(0px,0px,0px); opacity:1;}
+    100%{transform:translate3d(500px,500px,0px); opacity:0;}
+}
+
+/*第三屏动画*/
+@keyframes threeL{
+    0%{transform:rotateY(60deg); opacity:0; margin-left:-300px;}
+    100%{transform:rotateY(0deg); opacity:1; margin-left:0px;}
+}
+@-webkit-keyframes threeL{
+    0%{transform:rotateY(60deg); opacity:0; margin-left:-300px;}
+    100%{transform:rotateY(0deg); opacity:1; margin-left:0px;}
+}
+
+@keyframes threeR{
+    0%{transform:rotateY(-90deg) translate3d(500px,0px,0px); opacity:0;}
+    100%{transform:rotateY(0deg) translate3d(0px,0px,0px); opacity:1;}
+}
+@-webkit-keyframes threeR{
+    0%{transform:rotateY(-90deg) translate3d(0px,0px,0px); opacity:0;}
+    100%{transform:rotateY(0deg) translate3d(0px,0px,0px); opacity:1;}
+}
+
+@keyframes threeB{
+    0%{transform:rotateX(90deg);opacity:0}
+    100%{transform:rotateX(0deg);opacity:1}
+}
+@-webkit-keyframes threeB{
+    0%{transform:rotateX(90deg);opacity:0}
+    100%{transform:rotateX(0deg);opacity:1}
+}
+
+
+@keyframes threeLs{
+    0%{transform:rotateY(0deg); opacity:1; margin-left:0px;}
+    100%{transform:rotateY(60deg); opacity:0; margin-left:-300px;}
+}
+@-webkit-keyframes threeLs{
+    0%{transform:rotateY(0deg); opacity:1; margin-left:0px;}
+    100%{transform:rotateY(60deg); opacity:0; margin-left:-300px;}
+}
+
+@keyframes threeRs{
+    0%{transform:rotateY(0deg) translate3d(0px,0px,0px); opacity:1;}
+    100%{transform:rotateY(-90deg) translate3d(500px,0px,0px); opacity:0;}
+}
+@-webkit-keyframes threeRs{
+    0%{transform:rotateY(0deg) translate3d(0px,0px,0px); opacity:1;}
+    100%{transform:rotateY(-90deg) translate3d(500px,0px,0px); opacity:0;}
+}
+
+@keyframes threeBs{
+    0%{transform:rotateX(0deg);opacity:1}
+    100%{transform:rotateX(90deg);opacity:0}
+}
+@-webkit-keyframes threeBs{
+    0%{transform:rotateX(0deg);opacity:1}
+    100%{transform:rotateX(90deg);opacity:0}
+}
+
+/*第四屏动画*/
+@keyframes fourT{
+    0%{transform:rotateX(-30deg); opacity:0;}
+    20%{transform:rotateX(30deg); opacity:1;}
+    40%{transform:rotateX(-15deg); opacity:1;}
+    60%{transform:rotateX(15deg); opacity:1;}
+    80%{transform:rotateX(-10deg); opacity:1;}
+    100%{transform:rotateX(0deg); opacity:1;}
+}
+@-webkit-keyframes fourT{
+    0%{transform:rotateX(-30deg); opacity:0;}
+    20%{transform:rotateX(30deg); opacity:1;}
+    40%{transform:rotateX(-15deg); opacity:1;}
+    60%{transform:rotateX(15deg); opacity:1;}
+    80%{transform:rotateX(-10deg); opacity:1;}
+    100%{transform:rotateX(0deg); opacity:1;}
+}
+
+@keyframes fourB{
+    0%{transform:scale(0); opacity:0;}
+    100%{transform:scale(1); opacity:1;}
+}
+@-webkit-keyframes fourB{
+    0%{transform:scale(0); opacity:0;}
+    100%{transform:scale(1); opacity:1;}
+}
+
+
+@keyframes fourTs{
+    0%{transform:rotateX(0deg); opacity:1;}
+    100%{transform:rotateX(-30deg); opacity:0;}
+}
+@-webkit-keyframes fourTs{
+    0%{transform:rotateX(0deg); opacity:1;}
+    100%{transform:rotateX(-30deg); opacity:0;}
+}
+
+@keyframes fourBs{
+    0%{transform:scale(1); opacity:1;}
+    100%{transform:scale(0); opacity:0;}
+}
+@-webkit-keyframes fourBs{
+    0%{transform:scale(1); opacity:1;}
+    100%{transform:scale(0); opacity:0;}
+}
+
+/*第五屏动画*/
+@keyframes fiveT{
+    0%{transform:translate3d(300px,-600px,50px); opacity:0;}
+    100%{transform:translate3d(0px,0px,0px); opacity:1;}
+}
+@-webkit-keyframes fiveT{
+    0%{transform:translate3d(300px,-600px,50px); opacity:0;}
+    100%{transform:translate3d(0px,0px,0px); opacity:1;}
+}
+
+@keyframes fiveB{
+    0%{transform:translate3d(-300px,600px,50px);opacity:0;}
+    100%{transform:translate3d(0px,0px,0px);opacity:1;}
+}
+@-webkit-keyframes fiveB{
+    0%{transform:translate3d(-300px,600px,50px);opacity:0;}
+    100%{transform:translate3d(0px,0px,0px);opacity:1;}
+}
+
+@keyframes fiveTs{
+    0%{transform:translate3d(0px,0px,0px); opacity:1;}
+    100%{transform:translate3d(300px,-600px,50px); opacity:0;}
+}
+@-webkit-keyframes fiveTs{
+    0%{transform:translate3d(0px,0px,0px); opacity:1;}
+    100%{transform:translate3d(300px,-600px,50px); opacity:0;}
+}
+
+@keyframes fiveBs{
+    0%{transform:translate3d(0px,0px,0px);opacity:1;}
+    100%{transform:translate3d(-300px,600px,50px);opacity:0;}
+}
+@-webkit-keyframes fiveBs{
+    0%{transform:translate3d(0px,0px,0px);opacity:1;}
+    100%{transform:translate3d(-300px,600px,50px);opacity:0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

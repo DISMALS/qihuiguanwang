@@ -1,0 +1,321 @@
+﻿@charset 'utf-8';
+
+html,body,button,div,form,input,img,p,h1,h2,h3,h4,h5,h6,textarea,select,ul,li{
+	margin:0;
+	padding:0;
+}
+header,footer,section,article,addressmenu,label{
+	display:block;
+	}
+body{
+	font-family:"microsoft yahei",arial,sans-serif;
+    width:100%;
+	height:auto;
+	min-width:320px;
+	max-width:640px;
+	margin:0 auto;
+    position:relative;
+    /*transform-style:preserve-3d;
+    -webkit-transform-style:preserve-3d;
+    perspective:1200px;
+    -webkit-perspective:1200px;*/
+    background:#fff url(../images/footBg.png) no-repeat center bottom;
+    background-size:contain;
+}
+html{
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:100%;
+    min-width:320px;
+	max-width:640px;
+    margin:0 auto;
+    position:relative;
+	}
+ul,li,ol,dl,dd,dt{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	outline:none;
+}
+a.link{
+	text-decoration:none;
+	outline:none;
+}
+a.visited{
+	text-decoration:none;
+	outline:none;
+}
+a.hover{
+	text-decoration:none;
+	outline:none;
+}
+a.active{
+	text-decoration:none;
+	outline:none;
+}
+html,body,img{
+	border:0;
+	}
+i,em{
+	font-style:normal;
+	}
+img{
+	-ms-interpolation-mode:bicubic;
+	}
+q:before,q:after{
+	content:none;
+	}
+a,button{
+	cursor:pointer;
+    -webkit-appearance: none;
+	}
+input,select{
+	outline:none;
+	background:#fff;
+	border:none;
+    -webkit-appearance: none;
+}
+textarea{
+	overflow:auto;
+	resize:none;
+    -webkit-appearance: none;
+	}
+input[type="button"], input[type="submit"], input[type="reset"]{
+    -webkit-appearance: none;
+}
+/*公用的样式*/
+
+.head{
+    width:100%;
+    height:2.5rem;
+    background:url(../images/logoBg.jpg) no-repeat left top;
+    background-size:cover;
+    position:relative;
+    z-index:99;
+}
+.logo{
+    width:1.85rem;
+    height:1.95rem;
+    float:left;
+    margin:0.275rem;
+}
+.logo img{
+    width:100%;
+    max-width:74px;
+    max-height:78px;
+    display:block;
+    margin:0px auto;
+}
+.menu{
+    display:block;
+    width:1.2rem;
+    height:auto;
+    float:right;
+    position:relative;
+    padding:0.625rem 0.275rem 0rem 0rem;
+    z-index:99;
+}
+.menuBtn{
+    display:block;
+}
+.menuBtn img{
+    width:100%;
+    max-width:42px;
+    max-height:22px;
+    margin:0rem auto;
+}
+.menuMain{
+    position:absolute;
+    width:5rem;
+    height:100%;
+    top:0;
+    right:0;
+    background:#F3F3F3;
+    display:none;
+}
+.menuMain li{
+    line-height:2rem;
+    border-bottom:1px solid #DBDBDB;
+    font-size:0.6rem;
+}
+.menuMain li.closeBtn{
+    height:1.125rem;
+    border:none;
+    background:#391A68;
+    padding:0.6875rem 0rem;
+}
+.menuMain li.closeBtn img{
+    display:block;
+    width:1.125rem;
+    height:1.125rem;
+    max-width:45px;
+    max-height:45px;
+    margin:0rem auto;
+}
+.menuMain li a{
+    color:#333;
+    display:block;
+    padding-left:28%;
+}
+.menuMain li.lastLi{
+    border-bottom:1px solid transparent;
+}
+.content{
+    width:100%;
+    height:80%;
+    background:url(../images/allBg.png) no-repeat top center;
+    background-size:cover;
+    position:relative;
+    z-index:66;
+    padding:0rem 0rem 1rem 0rem;
+}
+.contents{
+    width:100%;
+    height:auto;
+    background:url(../images/allBg.png) no-repeat top center;
+    background-size:cover;
+    position:relative;
+    z-index:5;
+    padding:0rem 0rem 1rem 0rem;
+}
+.menuTit{
+    width:100%;
+    height:auto;
+    line-height:1.3rem;
+    font-size:1rem;
+    color:#000;
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:normal;
+    padding-bottom:0.4rem;
+    background:url(../images/xhx.jpg) no-repeat center bottom;
+}
+.alone{
+    padding-top:2rem;
+    padding-bottom:3.5rem;
+}
+
+/*背景层样式及动画*/
+.backgroundFloor{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:3;
+    transform-style:preserve-3d;
+    -webkit-transform-style:preserve-3d;
+    animation:bgRun 1s ease both;
+    -webkit-animation:bgRun 1s ease both;
+    overflow:hidden;
+}
+.backgroundFloor img{
+    display:block;
+}
+.backgroundFloor img.bgOne{
+    position:absolute;
+    top:10%;
+    left:5%;
+}
+.backgroundFloor img.bgOnes{
+    animation:runOne 28s linear infinite;
+    -webkit-animation:runOne 28s linear infinite;
+}
+.backgroundFloor img.bgTwo{
+    position:absolute;
+    top:35%;
+    left:66%;
+}
+.backgroundFloor img.bgTwoT{
+    position:absolute;
+    bottom:13%;
+    left:66%;
+}
+.backgroundFloor img.bgTwos{
+    animation:runTwo 36s linear 0.5s infinite;
+    -webkit-animation:runTwo 36s linear 0.5s infinite;
+}
+.backgroundFloor img.bgThree{
+    position:absolute;
+    top:7%;
+    left:57%;
+}
+.backgroundFloor img.bgThrees{
+    animation:runThree 38s linear 0.8s infinite;
+    -webkit-animation:runThree 38s linear 0.8s infinite;
+}
+.backgroundFloor img.bgFour{
+    position:absolute;
+    top:38%;
+    left:13%;
+}
+.backgroundFloor img.bgFourT{
+    position:absolute;
+    bottom:8%;
+    left:13%;
+}
+.backgroundFloor img.bgFours{
+    animation:runFour 36s linear 1s infinite;
+    -webkit-animation:runFour 36s linear 1s infinite;
+}
+@keyframes runOne{
+    0%{top:10%;}
+    100%{top:115%;}
+}
+@-webkit-keyframes runOne{
+    0%{top:10%;}
+    100%{top:115%;}
+}
+
+@keyframes runTwo{
+    0%{top:35%;}
+    100%{top:115%;}
+}
+@-webkit-keyframes runTwo{
+    0%{top:35%;}
+    100%{top:115%;}
+}
+
+@keyframes runThree{
+    0%{top:7%;}
+    100%{top:110%;}
+}
+@-webkit-keyframes runThree{
+    0%{top:7%;}
+    100%{top:110%;}
+}
+
+@keyframes runFour{
+    0%{top:38%;}
+    100%{top:110%;}
+}
+@-webkit-keyframes runFour{
+    0%{top:38%;}
+    100%{top:110%;}
+}
+@keyframes bgRun{
+    0%{
+        transform:translate3d(1000px,1000px,0px) rotateY(45deg) rotateX(30deg);
+    }
+    100%{
+        transform:translate3d(0px,0px,0px) rotateY(0deg) rotateX(0deg);
+    }
+}
+@-webkit-keyframes bgRun{
+    0%{
+        transform:translate3d(1000px,1000px,0px) rotateY(45deg) rotateX(30deg);
+    }
+    100%{
+        transform:translate3d(0px,0px,0px) rotateY(0deg) rotateX(0deg);
+    }
+}
+
+/*foot start*/
+.foot{
+    width:100%;
+    height:25%;
+    position:absolute;
+    bottom:0rem;
+    left:0rem;
+    z-index:0;
+}

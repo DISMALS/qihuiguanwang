@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="renderer" content="webkit">   <!--强制360浏览器为急速模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  <!--IE下按照标准模式进行渲染-->
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>企业文化</title>
+    <link href="css/common.css" type="text/css" rel="stylesheet" />
+    <link href="css/other.min.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript">
+        //声明H5标签
+        var hTage = ["section", "content","article"];
+        for (var i = 0; i < hTage.length; i++) {
+            document.createElement(hTage[i]);
+        }
+    </script>
+</head>
+<body>
+<!--左侧主导航部分开始-->
+<!-- #include file="head.html" -->
+<!--左侧主导航部分结束-->
+
+<!--主体分页部分开始-->
+<section class="rightMain">
+    <article class="recruit">
+        <img src="images/resources/cultrueTit.png" class="recruitTit" />
+        <ul class="recruitMains">
+            <li>
+                <div class="cultrueL cultrueLOne">
+                    <img src="images/resources/cultureL_1.png" class="cultrueLtop" style="max-height:129px;" />
+                    <img src="images/resources/cultureL_11.png" class="cultrueLbot" />
+                </div>
+                <div class="cultrueB cultrueBOne">
+                    <img src="images/resources/cultureB_1.png" class="cultrueBtop" />
+                    <!--<img src="images/resources/cultrueBDes_1.png" class="cultrueBdes" />-->
+                    <p class="wenhuaMs">成为河南企业首选的互联网服务供应商</p>
+                    <img src="images/resources/cultureB_11.png" class="cultrueBbot" />
+
+                </div>
+            </li>
+            <li>
+                <div class="cultrueL cultrueLTwo">
+                    <img src="images/resources/cultureL_2.png" class="cultrueLtop" style="max-height:143px;" />
+                    <img src="images/resources/cultureL_22.png" class="cultrueLbot" />
+                </div>
+                <div class="cultrueB cultrueBTwo">
+                    <img src="images/resources/cultureB_2.png" class="cultrueBtop" />
+                    <!--<img src="images/resources/cultrueBDes_2.png" class="cultrueBdes" />-->
+                    <p class="wenhuaMs">真诚、敬业、协作、创新</p>
+                    <img src="images/resources/cultureB_22.png" class="cultrueBbot" />
+
+                </div>
+            </li>
+            <li>
+                <div class="cultrueL cultrueLThree">
+                    <img src="images/resources/cultureL_3.png" class="cultrueLtop" style="max-height:116px;" />
+                    <img src="images/resources/cultureL_33.png" class="cultrueLbot" />
+                </div>
+                <div class="cultrueB cultrueBThree">
+                    <img src="images/resources/cultureB_3.png" class="cultrueBtop" />
+                    <!--<img src="images/resources/cultrueBDes_3.png" class="cultrueBdes" />-->
+                    <p class="wenhuaMs">沟通无障碍、执行无借口、协作无条件</p>
+                    <img src="images/resources/cultureB_33.png" class="cultrueBbot" />
+
+                </div>
+            </li>
+            <li>
+                <div class="cultrueL cultrueLFour">
+                    <img src="images/resources/cultureL_4.png" class="cultrueLtop" style="max-height:122px;" />
+                    <img src="images/resources/cultureL_44.png" class="cultrueLbot" />
+                </div>
+                <div class="cultrueB cultrueBFour">
+                    <img src="images/resources/cultureB_4.png" class="cultrueBtop" />
+                    <!--<img src="images/resources/cultrueBDes_4.png" class="cultrueBdes" />-->
+                    <p class="wenhuaMs">你只需要做好产品<br />剩下的交给我们</p>
+                    <img src="images/resources/cultureB_44.png" class="cultrueBbot" />
+
+                </div>
+            </li>
+            <li>
+                <div class="cultrueL cultrueLFive">
+                    <img src="images/resources/cultureL_5.png" class="cultrueLtop" style="max-height:144px;" />
+                    <img src="images/resources/cultureL_55.png" class="cultrueLbot" />
+                </div>
+                <div class="cultrueB cultrueBFive">
+                    <img src="images/resources/cultureB_5.png" class="cultrueBtop" />
+                    <!--<img src="images/resources/cultrueBDes_5.png" class="cultrueBdes" />-->
+                    <p class="wenhuaMs">为客户创造价值<br />为企业赢得朋友</p>
+                    <img src="images/resources/cultureB_55.png" class="cultrueBbot" />
+
+                </div>
+            </li>
+        </ul>
+    </article>
+    
+</section>
+<!--主体分页部分结束-->
+<script src="js/jquery.1.11.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.slimscroll.js" type="text/javascript"></script>
+<script src="js/base.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var winH = $(window).height();
+    var winW = $(window).width();
+    var recruit = $(".recruit");
+    if (winW > 1399) {
+        recruit.height(winH * 0.45);
+    } else {
+        recruit.height(winH * 0.65);
+    }
+    $(".recruit").css({
+        top: winH * 0.2 + "px"
+    });
+
+    $(window).resize(function () {
+        var winH = $(window).height();
+        var winW = $(window).width();
+        $(".recruit").css({
+            top: winH * 0.2 + "px"
+        });
+    });
+
+    //收缩动画
+    liEach();
+    $(".recruitMains li").first().addClass("cli").css("width", "26%");
+    $(".recruitMains li").first().find(".cultrueL").stop(true).hide();
+    $(".recruitMains li").first().find(".cultrueB").stop(true).show();
+
+    //手风琴切换效果
+    $(".recruitMains li").each(function () {
+        var fold = $(this).find(".cultrueL");
+        var unfold = $(this).find(".cultrueB");
+        if (fold.is(":hidden")) {
+            $(this).css("width","25.5%");
+        } else {
+            $(this).css("width", "15.5%");
+        }
+    })
+
+    $(".recruitMains li").mouseenter(function () {
+        var li_index = $(this).index();
+        $(this).addClass("cli").siblings("li").removeClass("cli");
+        $(this).stop(true).animate({ width: "25.5%" }, 200, liEach);
+        $(this).find(".cultrueB").stop(true).show();
+        $(this).find(".cultrueL").stop(true).hide();
+        $(this).siblings().stop(true).animate({ width: "15.5%" }, 200, liEach);
+        $(this).siblings().find(".cultrueB").stop(true).hide();
+        $(this).siblings().find(".cultrueL").stop(true).show();
+    });
+
+    function liEach() {
+        $(".recruitMains li").each(function (i) {
+            var liI = $(".recruitMains li")[i];
+            if ($(liI).hasClass("cli")) {
+                $(liI).find(".cultrueBbot").css("left", ($(liI).width() - $(liI).find(".cultrueBbot").width()) / 2);
+            } else {
+                $(liI).find(".cultrueLbot").css("left", ($(liI).width() - $(liI).find(".cultrueLbot").width()) / 2);
+            }
+        });
+    }
+    
+</script>
+</body>
+</html>

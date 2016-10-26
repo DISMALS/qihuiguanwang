@@ -1,0 +1,205 @@
+﻿@charset "utf-8";
+
+/*
+    *制作时间：2016-09-07
+    *用途：企汇网官网改版手机首页样式
+    *作者：王勇
+*/
+
+/*首页主样式*/
+.swiperMain{
+    height:auto;
+    position:relative;
+}
+.page{
+    width:80%;
+    height:auto;
+    padding:1.5rem 10% 0rem;
+    transform-style:preserve-3d;
+    -webkit-transform-style:preserve-3d;
+    perspective:300px;
+    -webkit-perspective:300px;
+    display:block;
+}
+.swiper-slide{
+    visibility:hidden;
+}
+.swiper-slide-active{
+    visibility:visible;
+}
+/*第一屏样式*/
+.swiper-slide-active .indexOnePicO{
+    width:73%;
+    height:auto;
+    float:left;
+    max-width:347px;
+    display:block;
+    animation:oneL 1s ease both;
+    -webkit-animation:oneL 1s ease both;
+}
+.swiper-slide-active .indexOnePicT{
+    width:27%;
+    height:auto;
+    float:right;
+    max-width:109px;
+    display:block;
+    animation:oneR 1s ease both;
+    -webkit-animation:oneR 1s ease both;
+}
+
+/*第二屏样式*/
+.swiper-slide-active .textMain{
+    display:block;
+    position:relative;
+    animation:twoT 1s ease both;
+    -webkit-animation:twoT 1s ease both;
+}
+.indexTit{
+    font-family:SimSun;
+    font-size:0.8rem;
+    color:#000;
+    line-height:1.6rem;
+    font-weight:normal;
+    display:block;
+}
+.indexDes{
+    font-family:SimSun;
+    font-size:0.6rem;
+    color:#333;
+    line-height:1rem;
+    display:block;
+}
+.swiper-slide-active .indexTwoPic{
+    width:66%;
+    height:auto;
+    display:block;
+    margin:0.4rem auto 0rem;
+    position:relative;  
+    animation:twoB 1s ease both;
+    -webkit-animation:twoB 1s ease both;
+    max-width:409px;
+}
+
+/*第三屏样式*/
+.swiper-slide-active .indexThreePic{
+    display:block;
+    width:55%;
+    height:auto;
+    position:relative;
+    margin:0.8rem auto 0rem;
+    max-width:337px;
+    animation:threeB 0.8s linear 1.5s both;
+    -webkit-animation:threeB 0.8s linear 1.5s both;
+}
+.swiper-slide-active .threeTit{
+    animation:threeL 1s ease  both;
+    -webkit-animation:threeL 1s ease  both;
+}
+.swiper-slide-active .threeDes{
+    animation:threeR 1s ease 1s  both;
+    -webkit-animation:threeR 1s ease 1s  both;
+}
+
+/*第四屏样式*/
+.swiper-slide-active .indexFourPic{
+    display:block;
+    width:65%;
+    height:auto;
+    position:relative;
+    margin:0.5rem auto 0rem;
+    max-width:409px;
+    animation:fourB 0.3s ease-in 1s both;
+    -webkit-animation:fourB 0.5s ease-in 1s both;
+}
+.swiper-slide-active .fourTextM{
+    display:block;
+    animation:fourT 1.5s ease both;
+    -webkit-animation:fourT 1.5s ease both;
+}
+
+/*第五屏样式*/
+.swiper-slide-active .fiveTextM{
+    display:block;
+    position:relative;
+    animation:fiveT 1.5s linear both;
+    -webkit-animation:fiveT 1.5s linear both;
+}
+.swiper-slide-active .fivePicM{
+    display:block;
+    width:100%;
+    height:auto;
+    position:relative;
+    margin:0.5rem auto 0rem;
+    animation:fiveB 1.5s linear both;
+    -webkit-animation:fiveB 1.5s linear both;
+}
+.indexFivePic{
+    display:block;
+    width:78%;
+    height:auto;
+    margin:1.5rem auto;
+    max-width:553px;
+}
+.numUp{
+    position:absolute;
+    left:12%;
+    bottom:56%;
+    font-size:0.5rem;
+    color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

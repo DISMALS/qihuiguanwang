@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable = no" />
+    <!--禁止缩放-->
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <!--全屏显示-->
+    <meta content="telephone=no" name="format-detection" />
+    <!--告诉设备忽略将页面中的数字识别为电话号码-->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <title>联系我们</title>
+    <link href="css/common.css" type="text/css" rel="stylesheet" />
+    <link href="css/other.css" type="text/css" rel="stylesheet" />
+    <link href="css/animate.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="js/tool.js"></script>
+    <script type="text/javascript">
+    //设置根字号
+    function resizeB() {
+        var htmlB = document.getElementsByTagName("html")[0]; //获取html标签
+        var screenWidth = window.innerWidth || document.documentElement.clientWidth;  //获取屏幕宽度
+        var _fontSize = 20 * (screenWidth / 320)//获取根字号大小
+        if (screenWidth < 641) {
+            //把根字号大小给html
+            htmlB.style.fontSize = _fontSize + "px";
+        };
+    }
+    addDomLoaded(resizeB);
+    window.onresize = function () {
+        resizeB();
+    };
+    </script>
+</head>
+<body>
+<!--header start-->
+<!-- #include file="head.html" -->
+<!--header end-->
+
+<!--section start-->
+<section class="contents alone">
+    <!--联系我们-->
+    <h2 class="menuTit">contact us<br />联系我们</h2>
+    <address class="address">
+        <img class="map" src="images/about/map.png" />
+        <content class="addMain">
+            <img class="ewm" src="images/test/ewm.jpg" />
+            <p>地址：郑州市冬青街26号河南省电子商务产品园3号楼2层</p>
+            <p>电话：400 6698 090</p>
+            <p>微博：@企汇网</p>
+        </content>
+    </address>
+</section>
+<!--section end-->
+
+<!--footer start-->
+<footer class="foot"></footer>
+<!--footer end-->
+<script type="text/javascript" src="js/jquery.1.11.1.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script stype="text/javascript">
+$(document).ready(function () {
+    var winH = $(window).height();
+    var winW = $(window).width();
+});
+</script>
+</body>
+</html>

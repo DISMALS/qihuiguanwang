@@ -1,0 +1,738 @@
+﻿@charset 'utf-8';
+html,body,button,ul,li,h1,h2,h3,h4,h5,h6,td,table,textarea,th,select,p,dl{
+	margin:0;
+	padding:0;
+}
+html{
+    width:100%;
+    height:100%;
+}
+body{
+    width:100%;
+    height:100%;
+	font-family:"microsoft yahei",arial,sans-serif;
+	background:#fff;
+    position:relative;
+    overflow:hidden;
+    font-size:20px;
+}
+ul,li,ol,dl,dd,dt{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	outline:none;
+}
+a.link{
+	text-decoration:none;
+	outline:none;
+}
+a.visited{
+	text-decoration:none;
+	outline:none;
+}
+a.hover{
+	text-decoration:none;
+	outline:none;
+}
+a.active{
+	text-decoration:none;
+	outline:none;
+}
+html,body,img{
+	border:0;
+	}
+q:before,q:after{
+	content:none;
+	}
+textarea{
+	overflow:auto;
+	resize:none;
+	}
+a,button{
+	cursor:pointer;
+	}
+input{
+	background:none;
+	border:none;
+    padding:0;
+	}
+h1,h2,h3,h4,h5,h6,em,i{
+	font-weight:normal;
+	}
+em{
+    font-style:normal;
+}
+textarea{
+	overflow:auto;
+	resize:none;
+	}
+input:-moz-placeholder,select:-moz-placeholder{
+    color:#666;
+}
+input::-moz-placeholder,select::-moz-placeholder{
+    color:#666;
+}
+input::-webkit-input-placeholder,select::-webkit-input-placeholder{
+    color:#666;
+}
+input:-ms-input-placeholder,select:-ms-input-placeholder{
+    color:#666;
+}
+i{
+    font-style:normal;
+}
+article{
+    display:block;
+}
+
+
+/*公共部分*/
+.toTop{
+    top:17%;
+}
+@media (max-width:1400px){
+    .toTop{
+        top:12.5%;
+    }
+}
+.titTop{
+    width:80%;
+    height:auto;
+    overflow:hidden;
+    margin-bottom:0.5em;
+}
+.tits{
+    width:13%;
+    height:80px;
+    float:left;
+}
+@media (max-width:1440px){
+    .tits{
+        width:16%;
+        height:80px;
+        float:left;
+    }
+    .investor .tits{
+        margin-top:1em;
+    }
+}
+.tits img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+.leftHead{
+    float:left;
+    width:16%;
+    height:100%;
+    background:#F9F9F9;
+    max-width:220px;
+    position:relative;
+    z-index:5;
+}
+.logo{
+    width:100%;
+    height:auto;
+    display:block;
+    max-width:220px;
+    max-height:170px;
+}
+.bor{
+    border-right:1px solid #eee;
+    padding-top:2em;
+}
+.mainMenu{
+    width:100%;
+    height:auto;
+}
+.mainMenu li{
+    width:100%;
+    padding:1.2em 0em;
+    font-size:0.7em;
+    color:#000;
+}
+.mainMenu li a{
+    min-width:30%;
+    margin-left:27%;
+    color:#333;
+    position:relative;
+    padding:0.5em 8%;
+}
+.mainMenu li a.act{
+    border:1px solid #333;
+}
+.mainMenu li a i{
+    position:absolute;
+    width:0px;
+    height:0px;
+    background:#333333;
+}
+.leftBottom{
+    width:100%;
+    height:auto;
+    position:absolute;
+    left:0;
+    bottom:1em;
+}
+.qukie{
+    width:80%;
+    height:auto;
+    margin-bottom:0.6em;
+    padding:0em 10%;
+    overflow:hidden
+}
+.qukie a{
+    float:left;
+    width:18%;
+    height:1.5em;
+    display:inline-block;
+    margin:0px 3.5%;
+    vertical-align:middle;
+}
+.qukie a img{
+    display:block;
+    width:100%;
+    height:auto;
+    margin:0px auto;
+}
+.wx{
+    max-width:26px;
+}
+.phone{
+    max-width:22px;
+}
+.qukie a img.youtub{
+    max-width:27px;
+    margin-top:0.15em;
+}
+.xinl{
+    max-width:26px;
+}
+.leftMenuP{
+    display:block;
+    width:70%;
+    margin:0.5em auto;
+    max-width:129px;
+}
+.leftMenuA{
+    display:block;
+    width:80%;
+    margin:0px auto;
+    max-width:157px;
+}
+@media (max-width:1400px){
+    .qukie a{
+        width:13%;
+        height:1.3em;
+        margin:0px 6%;
+    }
+    .qukie{
+        margin-bottom:0em;
+    }
+    .leftMenuP{
+        margin:0.2em auto 0.3em;
+    }
+    .leftBottom{
+        bottom:0.5em;
+    }
+    .bor{
+        padding-top:1.5em;
+    }
+}
+
+/*右侧和底部部分*/
+.rightTopMenu{
+    position:absolute;
+    top:0;
+    right:0;
+    padding-top:1.8em;
+    padding-right:2em;
+    z-index:111;
+}
+.menu{
+    width:36px;
+    height:22px;
+    margin:0px auto;
+    display:block;
+}
+.menu img{
+    width:36px;
+    height:22px;
+    display:block;
+}
+.rightMenu{
+    position:absolute;
+    top:0;
+    right:0;
+    width:150px;
+    background:#FAFAFA;
+    border-left:1px solid #EEEEEE;
+    border-bottom:1px solid #EEEEEE;
+    padding:0em;
+}
+.rightMenu li{
+    padding:0em 0.5em;
+    text-align:center;
+    font-family:'Microsoft YaHei';
+    font-size:0.7em;
+}
+.rightMenu li a{
+    display:block;
+    color:#333;
+    padding:1em 0em;
+    border-bottom:1px solid #eee;
+}
+.rightMenu li:hover{
+    background:#333;
+}
+.rightMenu li:hover a{
+    color:#fff;
+    border-bottom:1px solid transparent;
+}
+.rightMenu li.close{
+    border-bottom:1px solid transparent;
+}
+.rightMenu li.lastLi a{
+    border-bottom:1px solid transparent;
+}
+.rightMenu li.close:hover{
+    background:#FAFAFA;
+}
+.rightMenu li.close:hover a{
+    border-bottom:1px solid #eee;
+}
+.foot{
+    position:absolute;
+    bottom:0.9em;
+    right:1.5em;
+    z-index:111;
+    background:url(../images/dfl.jpg) no-repeat left 3px;
+    padding-left:14px;
+}
+.footSm{
+    float:left;
+    margin-right:15px;
+}
+.bah{
+    float:left;
+}
+
+/*背景球体部分样式*/
+.bg,.bgT{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:2;
+    perspective:8000px;
+    -webkit-perspective:8000px;
+    -webkit-transform-style:preserve-3d;
+    transform-style:preserve-3d;
+}
+/*右侧主内容及背景样式*/
+.rightMain{
+    width:84%;
+    height:auto;
+    float:left;
+    position:relative;
+    background:url(../images/bg.jpg) no-repeat left top;
+    background-size:cover;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+/*背景样式一*/
+.bgOne{
+    animation:bgOnes 2s ease both;
+    -webkit-animation:bgOnes 2s ease both;
+}
+
+/*背景样式二*/
+.bgTwo{
+    animation:bgTwos 2s ease both;
+    -webkit-animation:bgTwos 2s ease both;
+}
+
+.bgQiuOne{
+    position:absolute;
+    top:73px;
+    left:212px;
+    animation:ballRunT 25s linear 2s infinite;
+    -webkit-animation:ballRunT 25s linear 2s infinite;
+}
+.bgQiuOne div{
+    width:80px;
+    height:80px;
+    border-radius:80px;
+    -moz-border-radius:80px;
+    -ms-border-radius:80px;
+    -webkit-border-radius:80px;
+    -o-border-radius:80px;
+    background: linear-gradient(45deg,#FBFBFB,#E1E1E1);
+    background:-moz-linear-gradient(45deg,#FBFBFB,#E1E1E1);
+    background:-webkit-linear-gradient(45deg,#FBFBFB,#E1E1E1);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#FBFBFB, endColorstr=#E1E1E1);/*IE<9>*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#FBFBFB, endColorstr=#E1E1E1)";/*IE8+*/
+}
+.bgQiuTwo{
+    position:absolute;
+    left:341px;
+    bottom:18px;
+    animation:ballRunT 20s linear 2s infinite;
+    -webkit-animation:ballRunT 20s linear 2s infinite;
+}
+.bgQiuTwo div{
+    width:60px;
+    height:60px;
+    border-radius:60px;
+    -moz-border-radius:60px;
+    -ms-border-radius:60px;
+    -webkit-border-radius:60px;
+    -o-border-radius:60px;
+    background: linear-gradient(45deg,#00FCFE,#06F4FE 29%,#6666FF 99%);
+    background:-moz-linear-gradient(45deg,#00FCFE,#06F4FE 29%,#6666FF 99%);
+    background:-webkit-linear-gradient(45deg,#00FCFE,#06F4FE 29%,#6666FF 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#00FCFE, endColorstr=#6666FF);/*IE<9>*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#00FCFE, endColorstr=#6666FF)";/*IE8+*/
+}
+.bgQiuThree{
+    position:absolute;
+    left:600px;
+    bottom:190px;
+    animation:ballRunT 35s linear 2s infinite;
+    -webkit-animation:ballRunT 35s linear 2s infinite;
+}
+.bgQiuThree div{
+    width:35px;
+    height:35px;
+    border-radius:35px;
+    -moz-border-radius:35px;
+    -webkit-border-radius:35px;
+    background: linear-gradient(45deg,#00FCFE,#06F4FE 29%,#6666FF 99%);
+    background:-moz-linear-gradient(45deg,#00FCFE,#06F4FE 29%,#6666FF 99%);
+    background:-webkit-linear-gradient(45deg,#00FCFE,#06F4FE 29%,#6666FF 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#00FCFE, endColorstr=#6666FF);/*IE<9>*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#00FCFE, endColorstr=#6666FF)";/*IE8+*/
+}
+.bgQiuFour{
+    position:absolute;
+    top:221px;
+    right:135px;
+    animation:ballRun 55s linear 2s infinite;
+    -webkit-animation:ballRun 55s linear 2s infinite;
+}
+.bgQiuFour div{
+    width:40px;
+    height:40px;
+    border-radius:40px;
+    -moz-border-radius:40px;
+    -webkit-border-radius:40px;
+    background: linear-gradient(45deg,#00FCFE,#06F4FE 29%,#6666FF 99%);
+    background:-moz-linear-gradient(45deg,#00FCFE,#06F4FE 29%,#6666FF 99%);
+    background:-webkit-linear-gradient(45deg,#00FCFE,#06F4FE 29%,#6666FF 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#00FCFE, endColorstr=#6666FF);/*IE<9>*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#00FCFE, endColorstr=#6666FF)";/*IE8+*/
+}
+.bgQiuFive{
+    position:absolute;
+    right:208px;
+    bottom:209px;
+    z-index:15;
+    margin-right:-550px;
+    animation:ballRunTh 90s linear 2s infinite;
+    -webkit-animation:ballRunTh 90s linear 2s infinite;
+}
+.bgQiuFive div{
+    width:70px;
+    height:70px;
+    border-radius:70px;
+    -moz-border-radius:70px;
+    -webkit-border-radius:70px;
+    background: linear-gradient(45deg,#00FCFE,#06F4FE 29%,#6666FF 99%);
+    background:-moz-linear-gradient(45deg,#00FCFE,#06F4FE 29%,#6666FF 99%);
+    background:-webkit-linear-gradient(45deg,#00FCFE,#06F4FE 29%,#6666FF 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#00FCFE, endColorstr=#6666FF);/*IE<9>*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#00FCFE, endColorstr=#6666FF)";/*IE8+*/
+}
+.bgQiuSix{
+    position:absolute;
+    right:65px;
+    bottom:90px;
+    animation:ballRun 70s linear 2s infinite;
+    -webkit-animation:ballRun 70s linear 2s infinite;
+}
+.bgQiuSix div{
+    width:120px;
+    height:120px;
+    border-radius:120px;
+    -moz-border-radius:120px;
+    -webkit-border-radius:120px;
+    background: linear-gradient(45deg,#00FCFE,#06F4FE 29%,#6666FF 99%);
+    background:-moz-linear-gradient(45deg,#00FCFE,#06F4FE 29%,#6666FF 99%);
+    background:-webkit-linear-gradient(45deg,#00FCFE,#06F4FE 29%,#6666FF 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#00FCFE, endColorstr=#6666FF);/*IE<9>*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#00FCFE, endColorstr=#6666FF)";/*IE8+*/
+}
+.bgQiuSeven{
+    position:absolute;
+    right:208px;
+    top:200px;
+    margin-right:-750px;
+    animation:ballRunF 70s linear 2s infinite;
+    -webkit-animation:ballRunF 70s linear 2s infinite;
+}
+.bgQiuSeven div{
+    width:150px;
+    height:150px;
+    border-radius:150px;
+    -moz-border-radius:150px;
+    -webkit-border-radius:150px;
+    background: linear-gradient(45deg,#FBFBFB,#E1E1E1);
+    background:-moz-linear-gradient(45deg,#FBFBFB,#E1E1E1);
+    background:-webkit-linear-gradient(45deg,#FBFBFB,#E1E1E1);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#FBFBFB, endColorstr=#E1E1E1);/*IE<9>*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#FBFBFB, endColorstr=#E1E1E1)";/*IE8+*/
+}
+.bgQiuEight{
+    position:absolute;
+    right:400px;
+    bottom:350px;
+    animation:ballRun 70s linear 2s infinite;
+    -webkit-animation:ballRun 70s linear 2s infinite;
+}
+.bgQiuEight div{
+    width:200px;
+    height:200px;
+    border-radius:200px;
+    -moz-border-radius:200px;
+    -webkit-border-radius:200px;
+    background: linear-gradient(45deg,#FBFBFB,#E1E1E1);
+    background:-moz-linear-gradient(45deg,#FBFBFB,#E1E1E1);
+    background:-webkit-linear-gradient(45deg,#FBFBFB,#E1E1E1);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#FBFBFB, endColorstr=#E1E1E1);/*IE<9>*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#FBFBFB, endColorstr=#E1E1E1)";/*IE8+*/
+}
+
+
+/*翻页3D效果*/
+@-webkit-keyframes changePage{
+    0%{
+        -webkit-transform: rotateZ(60deg) translate3d(-3000px,2000px,0) scale(5);
+                transform: rotateZ(60deg) translate3d(-3000px,2000px,0) scale(5);
+    }
+    100%{
+        -webkit-transform: scale(1) translate3d(0,0,0) rotateZ(0);
+                transform: scale(1) translate3d(0,0,0) rotateZ(0);
+    }
+}
+
+@keyframes changePage{
+    0%{
+        -webkit-transform: rotateZ(60deg) translate3d(-3000px,2000px,0) scale(5);
+                transform: rotateZ(60deg) translate3d(-3000px,2000px,0) scale(5);
+    }
+    100%{
+        -webkit-transform: scale(1) translate3d(0,0,0) rotateZ(0);
+                transform: scale(1) translate3d(0,0,0) rotateZ(0);
+    }
+}
+/*背景一*/
+@keyframes bgOnes{
+    0%{
+        transform:scale(6) translate3d(-3000px,1000px,0px) rotateY(60deg);
+        -webkit-transform:scale(6) translate3d(-3000px,5000px,0px) rotateY(60deg);
+    }
+    100%{
+        transform:scale(1) translate3d(0,0,0) rotateY(0);
+        -webkit-transform:scale(1) translate3d(0,0,0) rotateY(0);
+    }
+}
+@-webkit-keyframes bgOnes{
+    0%{
+        transform:scale(6) translate3d(-3000px,1000px,0px) rotateY(60deg);
+        -webkit-transform:scale(6) translate3d(-3000px,1000px,0px) rotateY(60deg);
+    }
+    100%{
+        transform:scale(1) translate3d(0,0,0) rotateY(0);
+        -webkit-transform:scale(1) translate3d(0,0,0) rotateY(0);
+    }
+}
+/*背景二*/
+@keyframes bgTwos{
+    0%{
+        transform:rotateZ(0deg) scale(1);
+        -webkit-transform:rotateZ(0deg) scale(1);
+    }
+    100%{
+        transform:rotateZ(-45deg) scale(1.4);
+        -webkit-transform:rotateZ(-45deg) scale(1.4);
+    }
+}
+@-webkit-keyframes bgTwos{
+    0%{
+        transform:rotateZ(0deg) scale(1);
+        -webkit-transform:rotateZ(0deg) scale(1);
+    }
+    100%{
+        transform:rotateZ(-45deg) scale(1.4);
+        -webkit-transform:rotateZ(-45deg) scale(1.4);
+    }
+}
+
+/*球体运动*/
+@keyframes ballRun{
+    0%{
+        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        margin-right:0px;
+    }
+    100%{
+        transform:rotate(3600deg);
+        -webkit-transform:rotate(3600deg);
+        margin-right:1700px;
+    }
+}
+@-webkit-keyframes ballRun{
+    0%{
+        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        margin-right:0px;
+    }
+    100%{
+        transform:rotate(3600deg);
+        -webkit-transform:rotate(3600deg);
+        margin-right:1700px;
+    }
+}
+
+@keyframes ballRunTh{
+    0%{
+        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        margin-right:-550px;
+    }
+    100%{
+        transform:rotate(3600deg);
+        -webkit-transform:rotate(3600deg);
+        margin-right:1700px;
+    }
+}
+@-webkit-keyframes ballRunTh{
+    0%{
+        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        margin-right:-550px;
+    }
+    100%{
+        transform:rotate(3600deg);
+        -webkit-transform:rotate(3600deg);
+        margin-right:1700px;
+    }
+}
+
+@keyframes ballRunF{
+    0%{
+        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        margin-right:-750px;
+    }
+    100%{
+        transform:rotate(3600deg);
+        -webkit-transform:rotate(3600deg);
+        margin-right:1700px;
+    }
+}
+@-webkit-keyframes ballRunF{
+    0%{
+        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        margin-right:-750px;
+    }
+    100%{
+        transform:rotate(3600deg);
+        -webkit-transform:rotate(3600deg);
+        margin-right:1700px;
+    }
+}
+
+@keyframes ballRunT{
+    0%{
+        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        margin-left:0px;
+    }
+    100%{
+        transform:rotate(3600deg);
+        -webkit-transform:rotate(3600deg);
+        margin-left:-700px;
+    }
+}
+@-webkit-keyframes ballRunT{
+    0%{
+        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        margin-left:0px;
+    }
+    100%{
+        transform:rotate(3600deg);
+        -webkit-transform:rotate(3600deg);
+        margin-left:-700px;
+    }
+}
+
+/*右侧子菜单动画*/
+
+/*IE8及以下版本的屏蔽弹窗样式*/
+.iePop{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background:url(../images/popBg.png) repeat top left;
+    z-index:666;
+}
+.iePopM{
+    width:645px;
+    height:290px;
+    margin:0 auto;
+    background:url(../images/popDivBg.png) no-repeat center;
+    border-radius:12px;
+    padding:55px 70px;
+    position:relative;
+}
+.jg{
+    float:left;
+    width:122px;
+    height:100px;
+    margin-right:33px;
+}
+.iePopMR{
+    float:left;
+    width:490px;
+    color:#000;
+}
+.iePopMR b{
+    font-size:18px;
+    font-family:SimSun;
+    line-height:26px;
+    margin-bottom:20px;
+}
+.iePopMR p{
+    font-size:16px;
+    line-height:22px;
+    margin-bottom:35px;
+}
+.iePopMR font{
+    font-size:14px;
+    line-height:20px;
+}
+.browserList{
+    width:486px;
+    height:120px;
+    margin:10px auto 0px;
+    background:url(../images/browser.jpg) no-repeat center;
+}

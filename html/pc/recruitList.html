@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="renderer" content="webkit">   <!--强制360浏览器为急速模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  <!--IE下按照标准模式进行渲染-->
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>招聘岗位列表</title>
+    <link href="css/common.css" type="text/css" rel="stylesheet" />
+    <link href="css/list.min.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript">
+        //声明H5标签
+        var hTage = ["section", "content","article"];
+        for (var i = 0; i < hTage.length; i++) {
+            document.createElement(hTage[i]);
+        }
+    </script>
+</head>
+<body>
+<!--左侧主导航部分开始-->
+<!-- #include file="head.html" -->
+<!--左侧主导航部分结束-->
+
+<!--主体分页部分开始-->
+<section class="rightMain">
+    <article class="recruit">
+        <img src="images/resources/resources_3.png" class="recruitTit" />
+        <div class="recruitMM">
+            <span style="display:block;width:87%;position:relative;height:15px;margin-bottom:1.5em;"><a href="javascript:void(0);" class="recruitBacks">返回</a></span>
+            <div class="recruitMains">
+                <ul class="recruitList">
+                    <li>
+                        <a href="recruitCommon.html" target="_blank">
+                            媒介主管
+                            <em class="recruitTime">工作地点：郑州&nbsp;&nbsp;&nbsp;发布日期：2016年7月19日</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="recruitCommon.html" target="_blank">
+                            SEO专员
+                            <em class="recruitTime">工作地点：郑州&nbsp;&nbsp;&nbsp;发布日期：2016年7月19日</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="recruitCommon.html" target="_blank">
+                            新媒体运营
+                            <em class="recruitTime">工作地点：郑州&nbsp;&nbsp;&nbsp;发布日期：2016年7月19日</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="recruitCommon.html" target="_blank">
+                            营销策划
+                            <em class="recruitTime">工作地点：郑州&nbsp;&nbsp;&nbsp;发布日期：2016年7月19日</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="recruitCommon.html" target="_blank">
+                            媒介主管
+                            <em class="recruitTime">工作地点：郑州&nbsp;&nbsp;&nbsp;发布日期：2016年7月19日</em>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </article>
+    
+</section>
+<!--主体分页部分结束-->
+<script src="js/jquery.1.11.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.slimscroll.js" type="text/javascript"></script>
+<script src="js/base.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var winH = $(window).height();
+    var winW = $(window).width();
+    $(".recruit").css({
+        marginTop: winH * 0.2 + "px"
+    });
+    $(".recruitList li").last().css("borderBottom","none");
+    $(window).resize(function () {
+        var winH = $(window).height();
+        var winW = $(window).width();
+        $(".recruit").css({
+            marginTop: winH * 0.2 + "px"
+        });
+    });
+    
+</script>
+</body>
+</html>

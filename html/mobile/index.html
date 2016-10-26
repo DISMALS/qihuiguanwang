@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable = no" />
+    <!--禁止缩放-->
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <!--全屏显示-->
+    <meta content="telephone=no" name="format-detection" />
+    <!--告诉设备忽略将页面中的数字识别为电话号码-->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <title>首页</title>
+    <link href="css/common.css" type="text/css" rel="stylesheet" />
+    <link href="css/swiper.css" type="text/css" rel="stylesheet" />
+    <link href="css/index.css" type="text/css" rel="stylesheet" />
+    <link href="css/animate.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="js/tool.js"></script>
+    <script type="text/javascript">
+    //设置根字号
+    function resizeB() {
+        var htmlB = document.getElementsByTagName("html")[0]; //获取html标签
+        var screenWidth = window.innerWidth || document.documentElement.clientWidth;  //获取屏幕宽度
+        var _fontSize = 20 * (screenWidth / 320)//获取根字号大小
+        if (screenWidth < 641) {
+            //把根字号大小给html
+            htmlB.style.fontSize = _fontSize + "px";
+        };
+    }
+    addDomLoaded(resizeB);
+    window.onresize = function () {
+        resizeB();
+    };
+    </script>
+</head>
+<body style="overflow:hidden;">
+<!--header start-->
+<!-- #include file="head.html" -->
+<!--header end-->
+
+<!--背景层开始-->
+<aside class="backgroundFloor">
+    <img class="bgOne bgOnes" src="images/bg_1.png" />
+    <img class="bgTwo bgTwos" src="images/bg_2.png" />
+    <img class="bgThree bgThrees" src="images/bg_3.png" />
+    <img class="bgFour bgFours" src="images/bg_4.png" />
+</aside>
+<!--背景层结束-->
+
+<!--section start-->
+<section class="content">
+    
+    <article class="swiper-container">
+        <section class="swiperMain swiper-wrapper">
+            <!--page1-->
+            <article class="swiper-slide" style="top:4rem;">
+                <content class="page">
+                    <img class="indexOnePicO" src="images/index_12.png" />
+                    <img class="indexOnePicT" src="images/index_11.png" />
+                </content>
+            </article>
+
+            <!--page2-->
+            <article class="swiper-slide">
+                <content class="page">
+                    <content class="textMain">
+                        <b class="indexTit">企汇网平台事业部</b>
+                        <p class="indexDes">2009年5月“企汇网”B2B电子商务平台正式上线，致力于降低企业采购、销售、运营、营销成本，为企业运营全过程提供高效的全方位电子商务服务；先后获得“国家信息消费创新示范项目”“河南省十优电子商务平台”等。</p>
+                    </content>
+                    <img class="indexTwoPic" src="images/index_21.png" />
+                </content>
+            </article>
+
+            <!--page3-->
+            <article class="swiper-slide">
+                <content class="page">
+                    <b class="indexTit threeTit">企汇网（北京）公司</b>
+                    <p class="indexDes threeDes">企汇网信息技术（北京）有限公司是河南企汇网信息技术股份有限公司（证券代码：835707）全资控股子公司，成立于2016年4月26日，主要依托企汇网的技术优势和北京的人才地缘优势，专注为客户提供高价值的互联网营销整体解决方案。</p>
+                    <img class="indexThreePic" src="images/index_31.png" />
+                </content>
+            </article>
+
+            <!--page4-->
+            <article class="swiper-slide">
+                <content class="page">
+                    <content class="fourTextM">
+                        <b class="indexTit fourTit">北京嘉禾汇智科技</b>
+                        <p class="indexDes fourDes">北京嘉禾汇智科技有限公司（简称嘉禾汇智）是河南企汇网信息技术股份有限公司（证券代码：835707）全资子公司，专注为中小企业提供互联网快速建站及基础网络营销服务的创新型企业，主要经营业务为天梯快速建站系统开发、销售。</p>
+                    </content>
+                    <img class="indexFourPic" src="images/index_41.png" />
+                </content>
+            </article>
+
+            <!--page5-->
+            <article class="swiper-slide">
+                <content class="page">
+                    <content class="fiveTextM">
+                        <b class="indexTit">郑州商讯信息技术有限公司</b>
+                        <p class="indexDes">郑州商讯信息技术有限公司是河南企汇网信息技术股份有限公司（证券代码：835707）的全资子公司，其打造的优质便捷的小微企业云服务平台，为企业提供短信群发、及时通讯、网站建设、企业CRM等服务。</p>
+                    </content>
+                    <content class="fivePicM">
+                        <img class="indexFivePic" src="images/index_51.png" />
+                    </content>
+                </content>
+            </article>
+        </section>
+        <div class="swiper-pagination"></div>
+    </article>
+</section>
+<!--section end-->
+
+<!--footer start-->
+<footer class="foot"></footer>
+<!--footer end-->
+<script type="text/javascript" src="js/jquery.1.11.1.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script stype="text/javascript">
+$(document).ready(function () {
+    var winH = $(window).height();
+    var winW = $(window).width();
+    var headH = $(".head").height();
+    $("body").width(winW);
+    $("body").height(winH);
+    $(".content").height(winH - headH);
+    $("body").eq(0).css("overflow", "hidden");
+    $("body").bind("touchmove", function (event) {
+        event.preventDefault;
+    }, false);
+    //分屏导航
+    setInterval(function () {
+        var indexLi = $(".swiper-pagination").find("span");
+        indexLi.eq(indexLi.length - (indexLi.length - 0)).html("壹");
+        indexLi.eq(indexLi.length - (indexLi.length - 1)).html("贰");
+        indexLi.eq(indexLi.length - (indexLi.length - 2)).html("叁");
+        indexLi.eq(indexLi.length - (indexLi.length - 3)).html("肆");
+        indexLi.eq(indexLi.length - (indexLi.length - 4)).html("伍");
+    }, 100);
+    
+   
+});
+//首页分屏代码
+var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    autoplay: 8000,
+    loop: true
+});
+</script>
+</body>
+</html>

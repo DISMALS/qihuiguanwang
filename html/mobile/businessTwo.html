@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable = no" />
+    <!--禁止缩放-->
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <!--全屏显示-->
+    <meta content="telephone=no" name="format-detection" />
+    <!--告诉设备忽略将页面中的数字识别为电话号码-->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <title>北京子公司</title>
+    <link href="css/common.css" type="text/css" rel="stylesheet" />
+    <link href="css/other.css" type="text/css" rel="stylesheet" />
+    <link href="css/animate.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="js/tool.js"></script>
+    <script type="text/javascript">
+    //设置根字号
+    function resizeB() {
+        var htmlB = document.getElementsByTagName("html")[0]; //获取html标签
+        var screenWidth = window.innerWidth || document.documentElement.clientWidth;  //获取屏幕宽度
+        var _fontSize = 20 * (screenWidth / 320)//获取根字号大小
+        if (screenWidth < 641) {
+            //把根字号大小给html
+            htmlB.style.fontSize = _fontSize + "px";
+        };
+    }
+    addDomLoaded(resizeB);
+    window.onresize = function () {
+        resizeB();
+    };
+    </script>
+</head>
+<body>
+<!--header start-->
+<!-- #include file="head.html" -->
+<!--header end-->
+
+<!--section start-->
+<section class="contents alone">
+    <!--公司业务-->
+    <h2 class="menuTit">business<br />公司业务</h2>
+    <nav class="businessNav">
+        <a href="businessOne.html">企汇网平台事业部</a>
+        <a class="aboutUsOn" href="businessTwo.html">北京子公司</a>
+        <a href="businessThree.html">北京嘉禾</a>
+        <a href="businessFour.html">郑州商讯</a>
+    </nav>
+    <article class="businessMain">
+        <img class="businessTwo" src="images/business/business_2.png" />
+        <p>河南企汇网信息技术股份有限公司（以下简称：企汇网公司）成立于2011年5月31日，是一家致力于帮助企业快速实现互联网化的综合型B2B电子商务服务商，并于2016年1月26成功挂牌新三板，证券代码为：835707。企汇网公司始终坚持以用户为中心、产品和技术为驱动力，充分运用大数据分析和互联网思维，为中小微企业提供简捷、高效、智能的一站式互联网服务解决方案。</p>
+        <p>长期以来，企汇网公司本着“以技术求生存，以服务求发展”的指导思想，秉承“真诚，敬业，创新，协作”的理念，凭借在互联网领域专业的技术研发能力和丰富的网络营销经验，在互联网服务领域迅速崛起。在积极推动网络营销及电子商务应用方式创新的同时，致力于加快中小微企业信息化进程，助力中小微企业转型升级和中国产业结构调整。</p>
+        <p>经过坚持不懈的努力,企汇网公司获得了“国家电子商务示范企业”、“国家信息消费创新应用示范项目”、“商务部中国国际电子商务中心实训基地”、“河南省电子商务示范企业”、“河南省十优电子商务平台”等一系列荣誉资质。 </p>
+    </article>
+</section>
+<!--section end-->
+
+<!--footer start-->
+<footer class="foot"></footer>
+<!--footer end-->
+<script type="text/javascript" src="js/jquery.1.11.1.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+</body>
+</html>
